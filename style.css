@@ -33,12 +33,27 @@ header img {
   margin-top: 18px;
 }
 
-h1, legend {
+h1, legend, button {
   font-family: 'Staatliches', sans-serif;
 }
 
-p {
+p, label, span {
   font-family: 'Poppins', sans-serif;
+}
+
+label {
+  font-size: 14px;
+  line-height: 24px;
+}
+
+span {
+  font-size: 12px;
+  line-height: 20px;
+  color: #C1BCCC;
+}
+
+span:hover {
+  color: black;
 }
 
 legend {
@@ -165,4 +180,41 @@ textarea {
   background-image: url("data:image/svg+xml,%3Csvg width='18' height='14' viewBox='0 0 18 14' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M6 11.17L1.83 7L0.410004 8.41L6 14L18 2L16.59 0.589996L6 11.17Z' fill='%2342D3FF'/%3E%3C/svg%3E%0A");
   background-repeat: no-repeat;
   background-position: top 50% left 50%;
+}
+
+.time-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.time-wrapper .date input {
+  width: 300px;
+}
+
+.time-wrapper .time {
+  display: flex;
+  gap: 10px;
+}
+
+.time-wrapper .time input {
+  width: 140px;
+}
+
+button {
+  width: 622px;
+  height: 50px;
+  background: #F67669;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 20px;
+  line-height: 26px;
+  color: #FFF;
+  border: 0;
+  margin-top: 64px;
+}
+
+button:hover {
+  background: #f06353;
+
 }
